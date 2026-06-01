@@ -40,37 +40,27 @@ The **City Pollution Reduction Planner** solves this by modeling the scenario as
 
 ## ⚙️ Installation & Running
 
-### Option 1: Run Directly from GitHub (Fastest)
+**Prerequisites & System Requirements**
+* **Web Browser**: Modern web browser (Chrome, Firefox, Safari, or Edge)
+* **R Environment**: R version 4.0 or higher, RStudio (recommended)
+* **Required R Packages**: `shiny`, `bslib`, `DT`
 
-You can run this application directly inside your R console without downloading the repository manually. Open R/RStudio and run:
-
+**Installation**
+If running locally, install the required packages:
 ```R
-# Install required packages if you don't have them
 install.packages(c("shiny", "bslib", "DT"))
-
-# Launch the app directly from GitHub
-shiny::runGitHub("ashdsabandal/city-pollution-reduction-planner")
 ```
 
-
-### Option 2: Run Locally
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/ashdsabandal/pollution-reduction-planner.git
-   cd city-pollution-reduction-planner
-   ```
-2. **Install R packages**:
-   Launch R or RStudio and run:
+**Running the Application**
+1. Open RStudio (or R).
+2. Set your working directory to the folder containing `app.R`:
    ```R
-   install.packages(c("shiny", "bslib", "DT"))
+   setwd("path/to/your/app/folder")
    ```
-3. **Run the App**:
-   * In **RStudio**: Open `app.R` and click the **Run App** button in the top-right of the editor.
-   * In **R Console**: Run:
-     ```R
-     shiny::runApp()
-     ```
+3. Run the application using one of these methods:
+   * **In RStudio**: Open `app.R` and click the **Run App** button at the top.
+   * **In R Console**: Type `shiny::runApp()`
+4. The application will launch in your default web browser or RStudio's Viewer pane.
 
 ---
 
